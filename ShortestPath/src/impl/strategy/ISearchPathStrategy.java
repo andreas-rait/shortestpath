@@ -10,9 +10,7 @@
 
 package impl.strategy;
 
-import java.util.List;
-
-import impl.data.Node;
+import impl.data.Field;
 import impl.data.Path;
 
 
@@ -29,7 +27,7 @@ import impl.data.Path;
 
 public interface ISearchPathStrategy {
   
-  public Path getShortestPath(List<Node> field, Node start, Node end);  
+  public Path getShortestPath(Field field);  
 }
 
 

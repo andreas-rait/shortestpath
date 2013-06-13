@@ -25,17 +25,17 @@ import java.util.List;
 
 public class Path {
 
-  private final List<Node> nodes;
+  private final List<Edge> nodes;
 
   
-  public Path(List<Node> nodes){
+  public Path(List<Edge> nodes){
     this.nodes = nodes;
   }
   
   public Integer getWeight(){
     Integer sum = 0;
-    for(Node n :  nodes){
-      sum += n.getWeight();
+    for(Edge n :  nodes){
+      sum += n.getDistance();
     }
     
     return sum;
